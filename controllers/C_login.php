@@ -69,13 +69,15 @@ class C_login {
                         exit;
                     
                     }else {
-                        echo "<script>alert('Coba cek password. Ada yang salah');window.location='../index.php'</script>";
+                        echo "<script>alert('Password salah');window.location='../index.php'</script>";
                     }
                     
                     //untuk Role pengguna bukan sebagai admin dan user
                     }else {
-                        echo "<script>alert('Username tidak dikenali');window.location='../index.php'</script>/";
+                        echo "<script>alert('Password salah');window.location='../index.php'</script>/";
                     }
+            }else{
+                echo "<script>alert('Email tidak terdaftar dalam sistem');window.location='../index.php'</script>/";
             }
         }
 }       

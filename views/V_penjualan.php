@@ -115,7 +115,7 @@ if (!empty($_GET['cari_produk'])) {
 					<form action="../routers/R_penjualan.php?id=<?php echo $d['PenjualanID'];?>&aksi=Reset" method="post">
 					<input type="text" name="PenjualanID" value="<?php echo $d['PenjualanID']; ?>" hidden>
 					<input type="text" name="PelangganID" value="<?php echo $d['PelangganID']; ?>" hidden>
-					<h5><i class="fa fa-shopping-cart"></i> KASIR
+					<h5><i class="fa fa-shopping-cart"></i> FAY KASIR
 					<button class="btn btn-danger float-right" type="submit">
 						<b>RESET KERANJANG</b></button>
 					</h5>
@@ -233,7 +233,7 @@ if (!empty($_GET['cari_produk'])) {
 						</div>
 						<div class="col-sm-2">
 							<div class="form-group">
-								<button class="btn btn-warning btn-sm form-control" type="submit">Hitung Total</button>
+								<button class="btn btn-warning btn-sm form-control" type="submit">Simpan</button>
 							</div>
 							
 							
@@ -244,7 +244,7 @@ if (!empty($_GET['cari_produk'])) {
 				<div class="row">
 				
 				<div class="col-sm-10">
-							Bayar:<input class="form-control" type="text" name="Bayar" id="bayar" required oninvalid="this.setCustomValidity('Pembayaran masih kurang')">
+							Bayar:<input class="form-control" type="text" name="Bayar" id="bayar" oninvalid="this.setCustomValidity('Pembayaran masih kurang')" required>
 							Kembalian:<input class="form-control" readonly type="text" id="kembalianDisplay" name='Kembalian'><p id="warningMessage"></p></div>
 							<div class="col-sm-2">
 							<div class="form-group">

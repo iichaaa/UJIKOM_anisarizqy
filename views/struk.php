@@ -47,6 +47,9 @@ $conn = new C_koneksi();
             <?php 
             $penjualan = $_GET['id'];
 			$produk = mysqli_query($conn->conn(),"SELECT * FROM `detailpenjualan` JOIN produk ON produk.ProdukID=detailpenjualan.ProdukID WHERE PenjualanID='$penjualan'");
+      if ($d_produk['ProdukID'] == NULL) {
+          echo "<script>history.back();alert('Info barang belum diinput')</script>";
+      }else{
 			while($d_produk = mysqli_fetch_array($produk)){
 			?>
             <tr>
@@ -65,7 +68,7 @@ $conn = new C_koneksi();
 
                 </td>
             </tr>
-            <?php } ?>
+            <?php } } ?>
             </table>
             <div class="col-12">
                 <?php

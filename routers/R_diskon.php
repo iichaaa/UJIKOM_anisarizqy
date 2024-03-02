@@ -1,4 +1,5 @@
 <?php 
+error_reporting(E_ALL ^ E_NOTICE);
 // koneksi database
 include '../controllers/C_koneksi.php';
 $conn = new C_koneksi();

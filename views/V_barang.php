@@ -22,7 +22,6 @@ $produk = new C_produk();
                                                     <th scope="col">Nama Produk</th>
                                                     <th scope="col">Harga</th>
                                                     <th scope="col">Stok</th>
-                                                    <th scope="col">Nilai Poin</th>
                                                     <th scope="col">Gambar</th>
                                                     <th scope="col">action</th>
                                                 </tr>
@@ -50,7 +49,7 @@ $produk = new C_produk();
                                                 <td>
                                                 <ul class="d-flex justify-content-center">
                                                             <li class="mr-3"><a href="V_edit_produk.php?id=<?= $p->ProdukID; ?>" title="Edit" class="text-secondary"><i class="fa fa-edit"></i></a></li>
-                                                            <li><a onclick="return confirm('Apakah Anda yakin ingin menghapus data ini?');" href="../routers/R_produk.php?id=<?= $p->ProdukID; ?>&aksi=hapus" title="Hapus" class="text-danger"><i class="ti-trash"></i></a></li>
+                                                            <li><a href="../routers/R_produk.php?id=<?= $p->ProdukID; ?>&aksi=hapus" title="Hapus" class="text-danger"><i class="ti-trash"></i></a></li>
                                                         </ul>
                                                         </td>
                                             </tr>

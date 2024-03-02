@@ -27,11 +27,6 @@ public function conn() {
         }
 }
 
-public function set($conn, $enable) {
-    $conn = mysqli_connect('localhost','root','','kasir');
-    $status = $enable ? '1' : '0';
-    $conn->exec("SET FOREIGN_KEY_CHECKS=$status");
-}
 }
 //inisialisasi objek. objek harus diluar class
 // $koneksi = new C_koneksi();

@@ -1,7 +1,7 @@
 <?php
 include_once "../controllers/C_koneksi.php";
 $conn = new C_koneksi();
-$halaman="Penukaran Poin";
+$halaman="Belanjaan Member";
 include_once 'template/header.php';
 include_once 'template/sidebar.php';
 include_once 'template/topbar.php';
@@ -164,7 +164,7 @@ include_once 'template/topbar.php';
 						</div>
 						<div class="col-sm-2">
 							<div class="form-group">
-								<button class="btn btn-warning btn-sm form-control" type="submit">Simpan</button>
+								<button class="btn btn-warning btn-sm form-control" type="submit">Hitung Total</button>
 							</div>
 							
 							

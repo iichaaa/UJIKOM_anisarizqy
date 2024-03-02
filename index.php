@@ -71,7 +71,7 @@ window.location.href='views/home_user.php'
                                 </div>
                         <div class="form-gp">
                         <label for="exampleInputPassword1">Password</label>
-                            <input type="password" id="password" name="password" pattern=".{7,}" required oninvalid="this.setCustomValidity('Masukkan setidaknya 8 karakter')">
+                            <input type="password" id="password" name="password" pattern=".{7,}" required>
                             <i class="ti-lock"></i>
                             <div class="text-danger"></div>
                                 </div>

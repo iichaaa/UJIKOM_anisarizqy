@@ -47,7 +47,7 @@ $member = new C_member();
                                                 <td><?= $p->Alamat; ?></td>
                                                 <td>+62 <?= $p->NomorTelepon; ?></td>
                                                 <td><?= $p->JumlahPoin; ?></td>
-                                                <td><?= $p->TotalHarga; ?></td>
+                                                <td>Rp.<?= number_format($p->TotalHarga) ?></td>
                                                 <td>
                                                 <ul class="d-flex justify-content-center">
                                                     <div class="btn-group mb-xl-3" role="group" aria-label="Basic example">
